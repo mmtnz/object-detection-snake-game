@@ -76,7 +76,7 @@ pip python main.py
 
 ## Contact
 
-e-mail: [mariomlafuente@gmail.com](mailto:mariomlafuente@gmail.com)
+- e-mail: [mariomlafuente@gmail.com](mailto:mariomlafuente@gmail.com)
 
 <p align="right">(<a href="#object-detection-snake-game">back to top</a>)</p>
 
