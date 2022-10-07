@@ -74,6 +74,12 @@ pip python main.py
 
 <p align="right">(<a href="#object-detection-snake-game">back to top</a>)</p>
 
+## Contact
+
+e-mail: [mariomlafuente@gmail.com](mailto:mariomlafuente@gmail.com)
+
+<p align="right">(<a href="#object-detection-snake-game">back to top</a>)</p>
+
 ## Acknowledgment
 
 I want to thanks USUARIO for his `Object Detection` tutorial
