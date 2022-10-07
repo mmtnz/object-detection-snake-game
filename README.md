@@ -5,28 +5,30 @@ Snake game which is controlled by hand gestures thanks to object detection API
 <details>
   <summary>Click me</summary>
   
-  ### Contents
-  1. [Description](#description)
-  2. [Built With](#built-with)
-  3. [Challenges](#challenges)
-  4. [Getting Started](#getting-started)
+### Contents
+1. [Description](#description)
+  1. [Built With](#built-with)
+  2. [Challenges](#challenges)
+2. [Getting Started](#getting-started)
 </details>
 
 ## Description
 
 This repository has been created with the aim of understanding how the object detection API works.
 
-With the object detecion API and a pretrained model it is possible to capture hand's position which are used to change snake's direction. The model has been trained following the ############ object detection tutorial. It could be retrained if it is not working properly.
+With the object detecion API and a pretrained model it is possible to capture hand's position which are used to change snake's direction. The model has been trained following the ############ Object detection tutorial. It could be retrained if it is not working properly.
 
 The snake game is defined as a class with different methods to move the snake. Probably there are better python implementations of this game due to its age. However, the game is only used as a demo and I wanted to face the game implementation on my own.
 
-A keyboard mdoe implementation is also included.
+A keyboard mode implementation is also included.
 
 ### Built With
 
 - [![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/) | [![iPython 8.5](https://img.shields.io/badge/ipython-8.5-yellow.svg)](https://www.python.org/downloads/release/python-390/): Both python and ipython versions are implemented and included.
 - [![TensorFlow 2](https://img.shields.io/badge/TensorFlow_Object_Detection_API-2.2-FF6F00?logo=tensorflow)](https://github.com/tensorflow/models/blob/master/research/object_detection): TensorFlow Object Detecion API to detect the different hand positions
 - [![mysql](https://img.shields.io/badge/MySQL-database-green?style=flate&logo=mysql&logoColor=white.svg)](https://mysql.com/) : MySql database is (optionally) used to gather scores. This allows to share scores between different players.
+
+<p align="right">(<a href="#object-detection-snake-game">back to top</a>)</p>
 
 ## Getting started
 
@@ -53,12 +55,24 @@ pip install -r requirements.txt
 - #### Train model (optional)
 This repository includes an already trained model. However, sometimes could be interesting to train it again if it is not working properly.
 
+The following tutorial could be of help to train the model.
+
+Once trained, it has to be ######### SAVED ########### and moved to the following path: "project_local_folder/Tensorflow/......##########
+
+The model labels have to follow this order ->  [1 up, 2 down, 3 left, 4 right]
+
 - #### Launch program
 
-For 
+  - python mode:
+```sh
+cd project_local_folder
+pip python main.py
+```
+  - ipython mode:
+   
+   Open `Snake.ipyn` in a Jupyter Notebook and run cells
 
-
-`Indicar pasos a seguir`
+<p align="right">(<a href="#object-detection-snake-game">back to top</a>)</p>
 
 ## Acknowledgment
 
