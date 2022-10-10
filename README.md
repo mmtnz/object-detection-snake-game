@@ -27,11 +27,17 @@ The snake game is defined as a class with different methods to move the snake. P
 
 A keyboard mode implementation is also included.
 
+![snake](https://user-images.githubusercontent.com/100723086/194897587-980f38fb-8ed3-4fc2-b506-c0ede6e016bb.gif)
+
+
 ### Built With
 
 - [![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/) | [![iPython 8.5](https://img.shields.io/badge/ipython-8.5-yellow.svg)](https://www.python.org/downloads/release/python-390/): Both python and ipython versions are implemented and included.
 - [![TensorFlow 2](https://img.shields.io/badge/TensorFlow_Object_Detection_API-2.2-FF6F00?logo=tensorflow)](https://github.com/tensorflow/models/blob/master/research/object_detection): TensorFlow Object Detecion API to detect the different hand positions.
 - [![mysql](https://img.shields.io/badge/MySQL-database-green?style=flate&logo=mysql&logoColor=white.svg)](https://mysql.com/) : MySql database is (optionally) used to gather scores. This allows to share scores between different players.
+
+<img src=https://user-images.githubusercontent.com/100723086/194898685-eb9a29d2-470c-4342-8083-78ccdbd70064.PNG width="300" height="300" />
+
 
 <p align="right">(<a href="#object-detection-snake-game">back to top</a>)</p>
 
@@ -57,10 +63,14 @@ cd project_local_folder
 pip install -r requirements.txt
 ```
 
+- #### Install object detection
+
+Setup: https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html
+
 - #### Train model (optional)
 This repository includes an already trained model. However, sometimes could be interesting to train it again if it is not working properly.
 
-The following tutorial could be of help to train the model.
+The following tutorial could be helpful to train the model.
 
 Once trained, it has to be ######### SAVED ########### and moved to the following path: "project_local_folder/Tensorflow/......##########
 
