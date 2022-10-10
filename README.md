@@ -21,7 +21,7 @@ Snake game controlled by hand gestures thanks to object detection API.
 
 This repository has been created with the aim of understanding how the object detection API works.
 
-With the object detecion API and a pretrained model it is possible to capture hand's position which are used to change snake's direction. The model has been trained following the ############ Object detection tutorial. It could be retrained if it is not working properly.
+With the object detecion API and a pretrained model it is possible to capture hand's position which are used to change snake's direction. The model has been trained following the [Object detection tutorial](https://www.youtube.com/watch?v=yqkISICHH-U&t=6286s). It could be retrained if it is not working properly.
 
 The snake game is defined as a class with different methods to move the snake. Probably there are better python implementations of this game due to its age. However, the game is only used as a demo and I wanted to face the game implementation on my own.
 
@@ -72,7 +72,7 @@ This repository includes an already trained model. However, sometimes could be i
 
 The following tutorial could be helpful to train the model.
 
-Once trained, it has to be ######### SAVED ########### and moved to the following path: "project_local_folder/Tensorflow/......##########
+Once trained, it has to be exported to save the model and moved to the following path: "project_local_folder/Tensorflow/workspace/models/(your model name)/export
 
 The model labels have to follow this order ->  [1 up, 2 down, 3 left, 4 right]
 
@@ -97,5 +97,7 @@ pip python main.py
 
 ## Acknowledgment
 
-I want to thanks USUARIO for his `Object Detection` tutorial
+I want to thanks [@nicknochnack](https://github.com/nicknochnack) for his `Object Detection` tutorial.
+
+<p align="right">(<a href="#object-detection-snake-game">back to top</a>)</p>
 
