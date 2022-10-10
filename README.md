@@ -1,5 +1,5 @@
 # object-detection-snake-game
-Snake game which is controlled by hand gestures thanks to object detection API
+Snake game controlled by hand gestures thanks to object detection API.
 
 ### Table of Contents
 <details>
