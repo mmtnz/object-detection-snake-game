@@ -1,4 +1,7 @@
 # object-detection-snake-game
+
+[![TensorFlow 2](https://img.shields.io/badge/TensorFlow_Object_Detection_API-2.2-FF6F00?logo=tensorflow)](https://github.com/tensorflow/models/blob/master/research/object_detection)
+
 Snake game controlled by hand gestures thanks to object detection API.
 
 ### Table of Contents
@@ -27,7 +30,7 @@ A keyboard mode implementation is also included.
 ### Built With
 
 - [![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/) | [![iPython 8.5](https://img.shields.io/badge/ipython-8.5-yellow.svg)](https://www.python.org/downloads/release/python-390/): Both python and ipython versions are implemented and included.
-- [![TensorFlow 2](https://img.shields.io/badge/TensorFlow_Object_Detection_API-2.2-FF6F00?logo=tensorflow)](https://github.com/tensorflow/models/blob/master/research/object_detection): TensorFlow Object Detecion API to detect the different hand positions
+- [![TensorFlow 2](https://img.shields.io/badge/TensorFlow_Object_Detection_API-2.2-FF6F00?logo=tensorflow)](https://github.com/tensorflow/models/blob/master/research/object_detection): TensorFlow Object Detecion API to detect the different hand positions.
 - [![mysql](https://img.shields.io/badge/MySQL-database-green?style=flate&logo=mysql&logoColor=white.svg)](https://mysql.com/) : MySql database is (optionally) used to gather scores. This allows to share scores between different players.
 
 <p align="right">(<a href="#object-detection-snake-game">back to top</a>)</p>
