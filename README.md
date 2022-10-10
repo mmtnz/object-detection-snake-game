@@ -84,7 +84,20 @@ Once trained, it has to be exported to save the model and moved to the following
 
 The model labels have to follow this order ->  [1 up, 2 down, 3 left, 4 right]
 
-- #### Launch program
+- #### Databae (optional)
+
+A database could be used to store scores and share them between players. Otherwise, scores are stored locally.
+
+The database should has the following structure:
+
+```sh
+CREATE TABLE movies(
+  name VARCHAR(50) NOT NULL,
+  score INT NOT NULL,
+);
+```
+
+### Launch program
 
   - python mode:
 ```sh
