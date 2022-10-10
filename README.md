@@ -6,10 +6,12 @@ Snake game controlled by hand gestures thanks to object detection API.
   <summary>Click me</summary>
   
 ### Contents
-1. [Description](#description)
-  1. [Built With](#built-with)
-  2. [Challenges](#challenges)
-2. [Getting Started](#getting-started)
+- 1. [Description](#description)
+  - 1 [Built With](#built-with)
+- 2. [Getting Started](#getting-started)
+- 3. [Contact](#contact)
+- 4. [Acknowledgment](#acknowledgment)
+
 </details>
 
 ## Description
