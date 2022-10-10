@@ -1,6 +1,6 @@
 import keyboard
 import cv2
-from snake_game_class import Snake
+from snake_game.snake_game_class import Snake
 import numpy as np
 import os
 import tensorflow as tf
@@ -9,7 +9,7 @@ from object_detection.utils import label_map_util
 from object_detection.utils import visualization_utils as viz_utils
 from object_detection.builders import model_builder
 from object_detection.utils import config_util
-
+import configuration as config_vars
 
 
 def snake_game_keyboard_mode(db_scores=None):
@@ -54,6 +54,23 @@ def snake_game_keyboard_mode(db_scores=None):
         snake.plot_snake()
 
 
+# Load pipeline config and build a detection model
+configs = config_util.get_configs_from_pipeline_file(config_vars.FILES['PIPELINE_CONFIG'])
+detection_model = model_builder.build(model_config=configs['model'], is_training=False)
+
+# Restore checkpoint
+ckpt = tf.compat.v2.train.Checkpoint(model=detection_model)
+ckpt.restore(os.path.join(config_vars.PATHS['CHECKPOINT_PATH'], 'ckpt-0')).expect_partial()
+
+
+@tf.function
+def detect_fn(image):
+    image, shapes = detection_model.preprocess(image)
+    prediction_dict = detection_model.predict(image, shapes)
+    detections = detection_model.postprocess(prediction_dict, shapes)
+    return detections
+
+
 def snake_game_object_detection_mode(db_scores=None, files=None):
     """
     Snake game played with hand gestures thanks to object detecion
@@ -65,8 +82,10 @@ def snake_game_object_detection_mode(db_scores=None, files=None):
     category_index = label_map_util.create_category_index_from_labelmap(files['LABELMAP'])
 
     cap = cv2.VideoCapture(0)
-    width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-    height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+    # width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+    # height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+    width = 600
+    height = 800
 
     snake = Snake(db_scores=db_scores)
 

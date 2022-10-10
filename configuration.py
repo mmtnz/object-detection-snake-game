@@ -1,5 +1,6 @@
 import configparser
 import sys
+import os
 
 config_file = 'configuration.ini'
 
@@ -46,5 +47,5 @@ PATHS = {
 
 FILES = {
     'PIPELINE_CONFIG': os.path.join('Tensorflow', 'workspace', 'models', CUSTOM_MODEL_NAME, 'export', 'pipeline.config'),
-    'LABELMAP': os.path.join(paths['ANNOTATION_PATH'], LABEL_MAP_NAME)
+    'LABELMAP': os.path.join(PATHS['ANNOTATION_PATH'], LABEL_MAP_NAME)
 }

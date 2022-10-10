@@ -1,0 +1,20 @@
+item { 
+	name:'up'
+	id:1
+}
+item { 
+	name:'down'
+	id:2
+}
+item { 
+	name:'left'
+	id:3
+}
+item { 
+	name:'right'
+	id:4
+}
+item { 
+	name:'restart'
+	id:5
+}
